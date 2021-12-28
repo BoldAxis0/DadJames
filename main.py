@@ -21,7 +21,7 @@ async def on_message(message):
         return
     else:
         msg = message.content
-        triggerWords = ["I'm ", "Im ", "im ", "I am ", "i am ", "IM ", "I AM "]
+        triggerWords = ["I'm ", "Im ", "im ", "I am ", "i am ", "IM ", "I AM ", "I is "]
         listOfMatches = [ele in msg for ele in triggerWords]
         if any(listOfMatches):
             indexOfTrigger = listOfMatches.index(True)
